@@ -12,7 +12,7 @@ class App extends Component {
   };
   
   componentDidMount () {
-    fetch('locations.json')
+    fetch('data/locations.json')
     .then((res) => res.json())
     .then((info) => {
       this.setState({
